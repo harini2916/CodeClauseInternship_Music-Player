@@ -1,0 +1,111 @@
+body{
+  background: linear-gradient(45deg, rgb(109, 191, 230), #9eb8f3);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(139, 211, 230, 0.15);  
+  backdrop-filter: blur(5px);
+}
+h2{
+color: blanchedalmond;
+font-family: "Open Sans", sans-serif;
+margin: 0;
+height: 100vh;
+display: table-header-group;
+align-items: center;
+justify-content: center;
+display: center;
+}
+h1{
+  color: whitesmoke;
+  position: absolute;
+  top: 500px;
+  left: 300px;
+}
+p{
+  color: whitesmoke;
+}
+
+img{
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  left: 150px;
+  top: 90px;
+}
+p{
+  color: whitesmoke;
+  position: absolute;
+  top: 550px;
+  left: 360px;
+}
+#prev{
+  background-color: rgb(10, 10, 10);
+  border: none;
+  position: absolute;
+  top: 600px;
+  left: 280px;
+}
+#play{
+  background-color: rgb(10, 10, 10);
+  border: none;
+  position: absolute;
+  top: 600px;
+  left: 370px;
+}
+#next{
+  background-color: rgb(17, 17, 17);
+  border: none;
+  position: absolute;
+  top: 600px;
+  left: 440px;
+}
+.prev{
+  color: whitesmoke;
+  height: 5vh;
+}
+
+
+.volume {
+  input[type=range] {
+    display: none;
+  }
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .icon-size {
+    font-size: 2rem;
+  }
+  
+  .bar-hoverbox {
+    padding: 10px 15px;
+    opacity: 0.7;
+    transition: opacity .2s;
+    
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+  
+  .bar {
+    background: #999;
+    height: 7px;
+    width: 120px;
+    border-radius: 15px;
+    overflow: hidden;
+    pointer-events: none;
+    
+    .bar-fill {
+      background: #FFF;
+      width: 0%;
+      height: 100%;
+      background-clip: border-box;
+      pointer-events: none;
+    }
+  }
+}
+
